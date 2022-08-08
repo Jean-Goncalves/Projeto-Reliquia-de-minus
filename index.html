@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relíquia of Minus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'cormorant': ['Cormorant SC', 'serif'],
+                        'open': ['Open Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>        
+</head>
+<body class="">
+    <header>
+        <!-- header/navigation -->
+        <nav x-data="{ isOpen: false }" class="flex justify-between p-4 bg-gray-900 lg:p-8">
+            <div class="flex items-center h-20 w-20">
+                <img src="img/Relic3.svg" alt="Emblema da reliquia">
+            </div>
+    
+            <!-- left header section -->
+            <div class="flex items-center justify-between">
+                <button @click="isOpen = !isOpen" type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white lg:hidden" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+                <div class="hidden space-x-6 lg:inline-block">
+                    <a href="classes.html" class="text-2xl text-white ">Classes</a>
+                    <a href="profissão.html" class="text-2xl text-white ">Profissão</a>
+                    <a href="conta.html" class="text-2xl text-white ">Minha Conta</a>
+                </div>
+    
+                <!-- mobile navbar -->
+                <div class="mobile-navbar">
+                    <!-- navbar wrapper -->
+                    <div class="fixed left-0 w-full h-50 p-5 bg-white rounded-lg shadow-xl top-16" x-show="isOpen"
+                        @click.away=" isOpen = false">
+                        <div class="flex flex-col space-y-6">
+                            <a href="classes.html" class="text-xl text-black">Classes</a>
+                            <a href="profissão.html" class="text-xl text-black">Profissão</a>
+                            <a href="conta.html" class="text-xl text-black ">Minha Conta</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end mobile navbar -->
+            </div>
+            <!-- right header section -->
+    
+        </nav>
+    </header>
+    <main class="flex">
+        <div class="h-5/6"style="background-image: url('img/fundo de mapa.png')">
+            <article class="">
+                <h2 class="p-5 text-center text-gray-900 text-4xl uppercase font-cormorant lg:text-5xl font-black">Bem vindo ao jogo de rpg Relíquia de Minus!</h2>
+                <img class="w-full" src="img/plano de fundo header.jpg" alt="Grande batalha com guerreiros se e monstros lutando">
+            </article>
+            <p class="whitespace-pre-lin mx-3 pt-2 pb-3 text-lg font-bold lg:text-3xl lg:mx-6 pt-4 pb-6 lg:font-semibold text-gray-900/100">Em Relíquia de Minus, você joga com um herói poderoso que combate monstros gigantescos, se embrenha em masmorras perigosas,
+                defende o mundo de Arcadia de todos os perigos e muito mais.</p>  
+                <img src="img/castelo.jpg" alt="Paisagem de um planalto esverdiado com um castelo ao fundo">    
+        </div>  
+    </main>
+    <footer class="bg-gray-900 h-auto w-full">
+        <p class="text-white text-sm p-3 ">©2022 Reliquía de Minus, INC. TODOS OS DIREITOS RESERVADOS.
+            Todas as marcas registradas mencionadas são de propriedade de seus respectivos donos.</p>
+    </footer>
+    
+</body>
+</html>

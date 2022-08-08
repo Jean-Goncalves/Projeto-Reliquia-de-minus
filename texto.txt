@@ -1,0 +1,123 @@
+ font-titulo: 'Cormorant SC', 'serif'
+ font-texto: 'Open Sans', 'sans-serif'
+ 
+ 
+ Titulo:
+
+ Relic of Minus
+ 
+ 
+ 
+ Descrição:
+
+ Em Relic of Minus, você joga com um herói poderoso que combate monstros gigantescos, se embrenha em masmorras perigosas,
+ defende o mundo de Arcadia de todos os perigos e muito mais.
+ 
+ 
+ 
+ 
+ rodapé:
+ 
+ ©2022 Relic of Minus, INC. TODOS OS DIREITOS RESERVADOS.
+ Todas as marcas registradas mencionadas são de propriedade de seus respectivos donos.
+
+ 
+ 
+ Pagina2
+
+ -------------------------Classes:-------------------------
+
+ Espadachim
+
+ São capazes de empunhar tanto lanças quanto espadas de uma ou duas mãos,
+  e estão sempre prontos a defender os mais fracos e revidarem com força com suas incríveis habilidades de batalha.
+
+ Arqueiro
+
+ Conseguem abater seus inimigos a longas distâncias, antes mesmo de serem notados.
+ Sempre determinados a aprimorar sua maestria com o arco e flecha, os arqueiros possuem habilidades específicas para esta arma,
+ que aumenta não só sua destreza, como também a agilidade.
+
+ Mago
+
+ Magos usam cajados para amplificar seus poderes arcanos, que combinados com um extenso conhecimento dos elementos formadores do nosso mundo, 
+ são capazes de fazer estragos devastadores em questão de segundos.
+ Eles não podem usar armaduras pesadas, por isso sempre aplicam estratégias bem elaboradas e reações rápidas nas batalhas para
+ aproveitarem ao máximo as fraquezas de seus adversários.
+
+ Sacerdote
+
+ Sacerdote usam magias de cura poderosas para se fortalecerem e também seus aliados. Eles contam com feitiços potentes de ataque à distância, 
+ porém os inimigos são capazes de surpreendê-los devido ao uso de pouca armadura. 
+ Sacerdote experientes usam seus poderes ofensivos com cuidado quando são apontados com a tarefa de manter seu grupo com vida.
+
+ Ladino
+
+ São mestres da esquiva e especialistas em ataques rápidos com as adagas, sendo capazes de eliminar seus oponentes com uma velocidade
+ espetacular.
+ Dificilmente são acertados em batalha e são capazes de se esconder dos inimigos camuflando-se no ambiente.
+ São especialistas nas artes do veneno e podem fazer uso de boas armaduras, espadas de uma mão, e até mesmo arco e flecha.
+
+ Necromante
+
+ Necromantes incineram e destroem seus inimigos ao utilizar combinações de pragas debilitantes e magia negra. Enquanto companheiros demoníacos
+  ajudantes os protegem e lhes garantem benefícios, os Necromantes atacam seus inimigos à distância. 
+ Tais feiticeiros possuem armaduras leves e são frágeis fisicamente, por isso os mais sábios deixam seus lacaios receberem a maioria dos
+  ataques inimigos para salvar a própria pele.
+
+  Druida
+
+  Druidas tiram proveito dos vastos poderes da natureza para preservar o equilíbrio e proteger a vida. Um druida experiente pode extrair a 
+  energia bruta da natureza, descarregando fúria celestial contra seus inimigos de grandes distâncias, 
+  imobilizando-os com raízes encantadas ou retardá-los em ciclones impiedosos.
+
+  Músico
+
+ Os Músico são artista que se utiliza de magia para aprimorar a sua arte. Estes personagens são reconhecidos por sua versatilidade no 
+ campo de batalha, podendo atuar relativamente bem como atacante e defensor, um ótimo controlador.
+
+
+
+
+ --------------------Profissão--------------------
+
+ Alfaiataria
+
+ Os alfaiates conseguem pegar um tecido e costurar maravilhas com ele. Armaduras de tecido, vestes, camisas, bolsas e outras criações são especialidades do alfaiate. 
+ Há muitos benefícios. Classes de armadura leve podem usar vestes místicas, todo tipo de herói pode usar as diversas bolsas e todos podem vestir as camisas e roupas 
+ decorativas saídas do tear do alfaiate.
+
+ Alquimia
+
+ Alquimistas usam ervas para criar misturas mágicas e estranhas que curam, concedem poder e têm vários outros efeitos benéficos – invisibilidade, resistência elemental,
+ restauração de mana e muitos, muitos outros. Eles também conseguem transmutar materiais místicos em outras formas raras e exóticas.
+
+ Couraria 
+
+ Coureiros trabalham os pelegos crus, espinhosos e rijos das feras para transformá-los em produtos utilizáveis. Dentre esses produtos, destacam-se armaduras leves –
+ de couro e de malha –, bem como mantos, bolsas e reforços especiais que aumentam os valores defensivos de armadura.
+
+ Culinaria
+
+ Cozinheiros fazem experimentos com estranhos e maravilhosos ingredientes conseguidos nos confins de Dalran. Um bom chef pode transformar ingredientes comuns, 
+ como um peixe recém-pescado ou uma sobra de carne, numa refeição deliciosa e nutritiva. 
+
+ Pescaria
+
+ Praticantes da Pesca relaxam e se alimentam com a dádiva dos mares e lagos de Dalaran. Uma escolha cuidadosa da isca e muita paciência podem resultar em fisgadas
+ recompensadoras, como iguarias marítimas que restauram pontos de vida ou melhoram atributos dos heróis, ou tralhas encharcadas, como caixotes e troncos.
+
+ Ferraria
+
+ Os ferreiros podem usar sua habilidade com o martelo e a bigorna para fabricar armas mortais, armaduras pesadas de malha ou de placas e outros itens mais especializados.
+ Ferreiros de alto nível podem também modificar seu próprio equipamento acrescentando engastes para gemas mágicas.
+
+ Encatamento 
+
+ Encantadores podem desencantar itens mágicos que estejam sobrando e usar o resíduo para melhorar permanentemente um equipamento. Com os encantamentos e materiais certos,
+ um encantador pode acrescentar vários bônus às suas armas e armaduras, tornando-as mais fortes, rápidas, resistentes, entre outros inúmeros poderes místicos.
+
+ Mineração
+
+ Os mineradores buscam minérios úteis e valiosos, extraindo-os diretamente da terra com suas picaretas. A familiaridade com a terra lhes dá um notável senso de onde podem
+ encontrar veios de ouro, prata e de outros metais ainda mais preciosos.

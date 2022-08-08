@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+</head>
+<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'cormorant': ['Cormorant SC', 'serif'],
+                        'open': ['Open Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>        
+</head>
+<body class="">
+    <header>
+        <!-- header/navigation -->
+        <nav x-data="{ isOpen: false }" class="flex justify-between p-4 bg-gray-900 lg:p-8">
+            <div class="flex items-center h-20 w-20">
+                <img src="img/Relic3.svg" alt="Emblema da reliquia">
+            </div>
+    
+            <!-- left header section -->
+            <div class="flex items-center justify-between">
+                <button @click="isOpen = !isOpen" type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white lg:hidden" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+                <div class="hidden space-x-6 lg:inline-block">
+                    <a href="index.html" class="text-2xl text-white ">Home</a>
+                    <a href="profissão.html" class="text-2xl text-white ">Profissão</a>
+                    <a href="conta.html" class="text-2xl text-white ">Minha Conta</a>
+                </div>
+    
+                <!-- mobile navbar -->
+                <div class="mobile-navbar">
+                    <!-- navbar wrapper -->
+                    <div class="fixed left-0 w-full h-50 p-5 bg-white rounded-lg shadow-xl top-16" x-show="isOpen"
+                        @click.away=" isOpen = false">
+                        <div class="flex flex-col space-y-6">
+                            <a href="index.html" class="text-xl text-black">Home</a>
+                            <a href="profissão.html" class="text-xl text-black">Profissão</a>
+                            <a href="conta.html" class="text-xl text-black ">Minha Conta</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end mobile navbar -->
+            </div>
+            <!-- right header section -->
+        </nav>
+    </header>
+    <main class="bg-black xl:flex xl:justify-center">
+        <!--Card-->
+        <section class="xl:container xl:columns-2 ">
+            <section class="border-2 border-yellow-400">
+                <h2 class="text-yellow-400 text-center text-2xl font-bold font-cormorant p-4 lg:p-8 lg:text-4xl">Espadachim</h2>
+                <div class="flex w-3/6 pl-3 pr-0">
+                    <img class="border-r-2 border-black" src="img/espadachim-m.jpg" alt="Guerreiro espadachim.">
+                    <img src="img/espadachim-f.jpg" alt="Guerreira espadachim.">
+                </div>
+                <p class="text-white p-4 text-lg xl:p-12 xl:mb-1"> 
+                    São capazes de empunhar tanto lanças quanto espadas de uma ou duas mãos,
+                    e estão sempre prontos a defender os mais fracos e revidarem com força com suas incríveis habilidades de batalha.
+                </p>
+            </section>
+            <section class="border-2 border-yellow-400">
+                <h2 class="text-yellow-400 text-center text-2xl font-bold font-cormorant p-4 lg:p-8 lg:text-4xl">Arqueiro</h2>
+                <div class="flex w-3/6 pl-3 pr-0">
+                    <img class="border-r-2 border-black" src="img/arqueiro m.jpg" alt="Homem segurando um arco.">
+                    <img src="img/arqueira f.jpg" alt="Mulher segurando um arco e mirando.">
+                </div>
+                <p class="text-white p-4 text-lg"> 
+                    Conseguem abater seus inimigos a longas distâncias, antes mesmo de serem notados.
+                    Sempre determinados a aprimorar sua maestria com o arco e flecha, os arqueiros possuem habilidades específicas para esta arma,
+                    que aumenta não só sua destreza, como também a agilidade.
+                </p>
+            </section>
+            <section class="border-2 border-yellow-400">
+                <h2 class="text-yellow-400 text-center text-2xl font-bold font-cormorant p-4 lg:p-8 lg:text-4xl">Mago</h2>
+                <div class="flex w-3/6 pl-3 pr-0">
+                    <img class="border-r-2 border-black" src="img/mago m.jpg" alt="Homem segurando um cajado e um livro de magia.">
+                    <img src="img/mago f.jpg" alt="Uma mulher segurando um cajado.">
+                </div>
+                <p class="text-white p-4 text-lg"> 
+                    Magos usam cajados para amplificar seus poderes arcanos, que combinados com um extenso conhecimento dos elementos formadores do nosso mundo, 
+                    são capazes de fazer estragos devastadores em questão de segundos.
+                    Eles não podem usar armaduras pesadas, por isso sempre aplicam estratégias bem elaboradas e reações rápidas nas batalhas para
+                    aproveitarem ao máximo as fraquezas de seus adversários.
+                </p>
+            </section>
+            <section class="border-2 border-yellow-400">
+                <h2 class="text-yellow-400 text-center text-2xl font-bold font-cormorant p-4 lg:p-8 lg:text-4xl">Sacerdote</h2>
+                <div class="flex w-3/6 pl-3 pr-0">
+                    <img class="border-r-2 border-black" src="img/sacerdote m.jpg" alt="Homem segurando uma bíblia sagrada.">
+                    <img src="img/sacerdote f.jpg" alt="Mulher segurando uma bíblia sagrada.">
+                </div>
+                <p class="text-white p-4 text-lg"> 
+                    Sacerdote usam magias de cura poderosas para se fortalecerem e também seus aliados. Eles contam com feitiços potentes de ataque à distância, 
+                    porém os inimigos são capazes de surpreendê-los devido ao uso de pouca armadura. 
+                    Sacerdote experientes usam seus poderes ofensivos com cuidado quando são apontados com a tarefa de manter seu grupo com vida.
+                </p>
+            </section>
+            <section class="border-2 border-yellow-400">
+                <h2 class="text-yellow-400 text-center text-2xl font-bold font-cormorant p-4 lg:p-8 lg:text-4xl">Ladino</h2>
+                <div class="flex w-3/6 pl-3 pr-0 lg:bg-cover">
+                    <img class="border-r-2 border-black" src="img/ladino m.jpg" alt="Homem segurando duas lâminas uma em cada mão.">
+                    <img src="img/ladina f.jpg" alt="Mulher segurando uma espada.">
+                </div>
+                <p class="text-white p-4 text-lg"> 
+                    São mestres da esquiva e especialistas em ataques rápidos com as adagas, sendo capazes de eliminar seus oponentes com uma velocidade
+                    espetacular.
+                    Dificilmente são acertados em batalha e são capazes de se esconder dos inimigos camuflando-se no ambiente.
+                    São especialistas nas artes do veneno e podem fazer uso de boas armaduras, espadas de uma mão, e até mesmo arco e flecha.
+                </p>
+            </section>
+            <section class="border-2 border-yellow-400">
+                <h2 class="text-yellow-400 text-center text-2xl font-bold font-cormorant p-4 lg:p-8 lg:text-4xl">Necromante</h2>
+                <div class="flex w-3/6 pl-3 pr-0">
+                    <img class="border-r-2 border-black" src="img/necromante m1.jpg" alt="Um necromante segurando uma foice usando magia.">
+                    <img src="img/necromante f1.jpg" alt="uma mulher segurando uma foice.">
+                </div>
+                <p class="text-white p-4 text-lg"> 
+                    Necromantes incineram e destroem seus inimigos ao utilizar combinações de pragas debilitantes e magia negra. Enquanto companheiros demoníacos
+                    ajudantes os protegem e lhes garantem benefícios, os Necromantes atacam seus inimigos à distância. 
+                    Tais feiticeiros possuem armaduras leves e são frágeis fisicamente, por isso os mais sábios deixam seus lacaios receberem a maioria dos
+                    ataques inimigos para salvar a própria pele.
+                </p>
+            </section>
+            <section class="border-2 border-yellow-400">
+                <h2 class="text-yellow-400 text-center text-2xl font-bold font-cormorant p-4 lg:p-8 lg:text-4xl">Druida</h2>
+                <div class="flex w-3/6 pl-3 pr-0">
+                    <img class="border-r-2 border-black" src="img/druida-m.png" alt="Um druida empunhado um bastão magico.">
+                    <img src="img/druida-f.png" alt="Uma mulher de chifres verdes empunhado um cajado magico.">
+                </div>
+                <p class="text-white p-4 text-lg"> 
+                    Druidas tiram proveito dos vastos poderes da natureza para preservar o equilíbrio e proteger a vida. Um druida experiente pode extrair a 
+                    energia bruta da natureza, descarregando fúria celestial contra seus inimigos de grandes distâncias, 
+                    imobilizando-os com raízes encantadas ou retardá-los em ciclones impiedosos.
+                </p>
+            </section>
+            <section class="border-2 border-yellow-400">
+                <h2 class="text-yellow-400 text-center text-2xl font-bold font-cormorant p-4 lg:p-8 lg:text-4xl">Músico</h2>
+                <div class="flex w-3/6 pl-3 pr-0">
+                    <img class="border-r-2 border-black" src="img/musico m.jpg" alt="Um homem segurando um violão.">
+                    <img src="img/musico f.jpg" alt="Uma mulher empunhado uma arpa.">
+                </div>
+                <p class="text-white p-4 text-lg"> 
+                    Os Músico são artista que se utiliza de magia para aprimorar a sua arte. Estes personagens são reconhecidos por sua versatilidade no 
+                    campo de batalha, podendo atuar relativamente bem como atacante e defensor, um ótimo controlador.
+                </p>
+            </section>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 h-auto w-full">
+        <p class="text-white text-sm p-3 ">©2022 Relic of Minus, INC. TODOS OS DIREITOS RESERVADOS.
+            Todas as marcas registradas mencionadas são de propriedade de seus respectivos donos.</p>
+    </footer>
+    
+</body>
+</html>

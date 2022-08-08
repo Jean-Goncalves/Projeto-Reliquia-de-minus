@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relíquia of Minus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'cormorant': ['Cormorant SC', 'serif'],
+                        'open': ['Open Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>        
+</head>
+
+<body class="">
+    <header>
+        <!-- header/navigation -->
+        <nav x-data="{ isOpen: false }" class="flex justify-between p-4 bg-gray-900 lg:p-8">
+            <div class="flex items-center h-20 w-20">
+                <img src="img/Relic3.svg" alt="Emblema da reliquia">
+            </div>
+    
+            <!-- left header section -->
+            <div class="flex items-center justify-between">
+                <button @click="isOpen = !isOpen" type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white lg:hidden" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+                <div class="hidden space-x-6 lg:inline-block">
+                    <a href="index.html" class="text-2xl text-white ">Home</a>
+                    <a href="classes.html" class="text-2xl text-white ">Classes</a>
+                    <a href="conta.html" class="text-2xl text-white ">Minha Conta</a>
+                </div>
+    
+                <!-- mobile navbar -->
+                <div class="mobile-navbar">
+                    <!-- navbar wrapper -->
+                    <div class="fixed left-0 w-full h-50 p-5 bg-white rounded-lg shadow-xl top-16" x-show="isOpen"
+                        @click.away=" isOpen = false">
+                        <div class="flex flex-col space-y-6">
+                            <a href="index.html" class="text-xl text-black">Home</a>
+                            <a href="classes.html" class="text-xl text-black">Classes</a>
+                            <a href="conta.html" class="text-xl text-black ">Minha Conta</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end mobile navbar -->
+            </div>
+            <!-- right header section -->
+    
+        </nav>
+    </header>
+  <main class="p-4 bg-gray-900 ">
+        <div class="items-center">
+            <h2 class="text-yellow-400 text-center text-2xl font-bold font-cormorant p-4 lg:p-8 lg:text-4xl">Alfaiataria</h2>
+            <div class="">
+                <img class="m-auto md:max-h-64" src="img/alfaiataria.png" alt="Um Objeto de tecelã.">
+            </div>
+            <p class="text-white p-4 text-lg border-b-2 border-white">Os alfaiates conseguem pegar um tecido e costurar maravilhas com ele. Armaduras de tecido, vestes, camisas, bolsas e outras criações são especialidades do alfaiate. 
+                Há muitos benefícios. Classes de armadura leve podem usar vestes místicas, todo tipo de herói pode usar as diversas bolsas e todos podem vestir as camisas e roupas 
+                decorativas saídas do tear do alfaiate.</p>
+        </div>
+        <div class="">
+            <h2 class="text-yellow-400 text-center text-2xl font-bold font-cormorant p-4 lg:p-8 lg:text-4xl">Alquimia</h2>
+            <div class="">
+                <img class="m-auto md:max-h-64" src="img/alquimia.png" alt="Equipamentos de alquimia.">
+            </div>
+            <p class="text-white p-4 text-lg border-b-2 border-white">Alquimistas usam ervas para criar misturas mágicas e estranhas que curam, concedem poder e têm vários outros efeitos benéficos – invisibilidade, resistência elemental,
+                restauração de mana e muitos, muitos outros. Eles também conseguem transmutar materiais místicos em outras formas raras e exóticas.</p>
+        </div>
+        <div class="">
+            <h2 class="text-yellow-400 text-center text-2xl font-bold font-cormorant p-4 lg:p-8 lg:text-4xl">Couraria</h2>
+            <div class="">
+                <img class="m-auto md:max-h-64" src="img/Couraria.png" alt="Equipamentos de couraria.">
+            </div>
+            <p class="text-white p-4 text-lg border-b-2 border-white">Coureiros trabalham os pelegos crus, espinhosos e rijos das feras para transformá-los em produtos utilizáveis. Dentre esses produtos, destacam-se armaduras leves –
+                de couro e de malha –, bem como mantos, bolsas e reforços especiais que aumentam os valores defensivos de armadura.</p>
+        </div>
+        <div class="">
+            <h2 class="text-yellow-400 text-center text-2xl font-bold font-cormorant p-4 lg:p-8 lg:text-4xl">Culinaria</h2>
+            <div class="">
+                <img class="m-auto md:max-h-64" src="img/Culinaria.png" alt="Utensílios culinarios.">
+            </div>
+            <p class="text-white p-4 text-lg border-b-2 border-white">Cozinheiros fazem experimentos com estranhos e maravilhosos ingredientes conseguidos nos confins de Dalran. Um bom chef pode transformar ingredientes comuns, 
+                como um peixe recém-pescado ou uma sobra de carne, numa refeição deliciosa e nutritiva. </p>
+        </div>
+        <div class="">
+            <h2 class="text-yellow-400 text-center text-2xl font-bold font-cormorant p-4 lg:p-8 lg:text-4xl">Encantamento</h2>
+            <div class="">
+                <img class="m-auto md:max-h-64" src="img/Encantamento.png" alt="Equipamentos de encantamento.">
+            </div>
+            <p class="text-white p-4 text-lg border-b-2 border-white">Encantadores podem desencantar itens mágicos que estejam sobrando e usar o resíduo para melhorar permanentemente um equipamento. Com os encantamentos e materiais certos,
+                um encantador pode acrescentar vários bônus às suas armas e armaduras, tornando-as mais fortes, rápidas, resistentes, entre outros inúmeros poderes místicos.</p>
+        </div>
+        <div class="">
+            <h2 class="text-yellow-400 text-center text-2xl font-bold font-cormorant p-4 lg:p-8 lg:text-4xl">Ferraria</h2>
+            <div class="">
+                <img class="m-auto md:max-h-64" src="img/Ferraria.png" alt="Equipamentos de ferraria.">
+            </div>
+            <p class="text-white p-4 text-lg border-b-2 border-white">Os ferreiros podem usar sua habilidade com o martelo e a bigorna para fabricar armas mortais, armaduras pesadas de malha ou de placas e outros itens mais especializados.
+                Ferreiros de alto nível podem também modificar seu próprio equipamento acrescentando engastes para gemas mágicas.</p>
+        </div>
+        <div class="">
+            <h2 class="text-yellow-400 text-center text-2xl font-bold font-cormorant p-4 lg:p-8 lg:text-4xl">Mineração</h2>
+            <div class="">
+                <img class="m-auto md:max-h-64" src="img/Mineração.png" alt="Minério de ferro">
+            </div>
+            <p class="text-white p-4 text-lg border-b-2 border-white">Os mineradores buscam minérios úteis e valiosos, extraindo-os diretamente da terra com suas picaretas. A familiaridade com a terra lhes dá um notável senso de onde podem
+                encontrar veios de ouro, prata e de outros metais ainda mais preciosos.</p>
+        </div>
+        <div class="">
+            <h2 class="text-yellow-400 text-center text-2xl font-bold font-cormorant p-4 lg:p-8 lg:text-4xl">Pescaria</h2>
+            <div class="">
+                <img class="m-auto md:max-h-64" src="img/Pescaria.png" alt="Um isca de pato.">
+            </div>
+            <p class="text-white p-4 text-lg">Praticantes da Pesca relaxam e se alimentam com a dádiva dos mares e lagos de Dalaran. Uma escolha cuidadosa da isca e muita paciência podem resultar em fisgadas
+                recompensadoras, como iguarias marítimas que restauram pontos de vida ou melhoram atributos dos heróis, ou tralhas encharcadas, como caixotes e troncos.</p>
+        </div>
+  </main>  
+   
+</body>
+</html>

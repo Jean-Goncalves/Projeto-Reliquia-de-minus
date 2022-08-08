@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relíquia of Minus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'cormorant': ['Cormorant SC', 'serif'],
+                        'open': ['Open Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>        
+</head>
+<body class="">
+    <header>
+        <!-- header/navigation -->
+        <nav x-data="{ isOpen: false }" class="flex justify-between p-4 bg-gray-900 lg:p-8">
+            <div class="flex items-center h-20 w-20">
+                <img src="img/Relic3.svg" alt="Emblema da reliquia">
+            </div>
+    
+            <!-- left header section -->
+            <div class="flex items-center justify-between">
+                <button @click="isOpen = !isOpen" type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white lg:hidden" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+                <div class="hidden space-x-6 lg:inline-block">
+                    <a href="index.html" class="text-2xl text-white ">Home</a>
+                    <a href="classes.html" class="text-2xl text-white ">Classes</a>
+                    <a href="profissão.html" class="text-2xl text-white ">Profissão</a>
+                </div>
+    
+                <!-- mobile navbar -->
+                <div class="mobile-navbar">
+                    <!-- navbar wrapper -->
+                    <div class="fixed left-0 w-full h-50 p-5 bg-white rounded-lg shadow-xl top-16" x-show="isOpen"
+                        @click.away=" isOpen = false">
+                        <div class="flex flex-col space-y-6">
+                            <a href="index.html" class="text-xl text-black">Home</a>
+                            <a href="classes.html" class="text-xl text-black">Classes</a>
+                            <a href="profissão.html" class="text-xl text-black">Profissão</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end mobile navbar -->
+            </div>
+            <!-- right header section -->
+    
+        </nav>
+    </header>
+    
+    <main>
+          <!-- Main modal -->
+          <div class="overflow-y-auto overflow-x-hidden top-80 right-0 left-0 z-50 w-full md:inset-0 md:h-full justify-center items-center flex">
+              <div class="p-4 w-full max-w-md h-full md:h-auto">
+                  <!-- Modal content -->
+                  <div class="bg-white rounded-lg shadow dark:bg-gray-700">
+
+                      <div class="py-6 px-6 lg:px-8">
+                          <h3 class="mb-4 text-xl font-medium text-gray-900 dark:text-white">Login</h3>
+                          <form class="space-y-6" action="#">
+                              <div>
+                                  <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Seu email</label>
+                                  <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="name@company.com" required="">
+                              </div>
+                              <div>
+                                  <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Sua senha</label>
+                                  <input type="password" name="password" id="password" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required="">
+                              </div>
+                              <div class="flex justify-between">
+                                  <div class="flex items-start">
+                                      <div class="flex items-center h-5">
+                                          <input id="remember" type="checkbox" value="" class="w-4 h-4 bg-gray-50 rounded border border-gray-300 focus:ring-3 focus:ring-blue-300 dark:bg-gray-600 dark:border-gray-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800" required="">
+                                      </div>
+                                      <label for="remember" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Lembre de mim</label>
+                                  </div>
+                                  <a href="#" class="text-sm text-blue-700 hover:underline dark:text-blue-500">Esqueceu sua senha?</a>
+                              </div>
+                              <button type="submit" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Faça login na sua conta</button>
+                              <div class="text-sm font-medium text-gray-500 dark:text-gray-300">
+                                  Não é Registrado? <a href="#" class="text-blue-700 hover:underline dark:text-blue-500">Criar uma Conta</a>
+                              </div>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div> 
+
+    </main>
+</body>
+</html>    
